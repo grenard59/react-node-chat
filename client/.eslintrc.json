@@ -1,0 +1,11 @@
+{
+  "rules": {
+    "unused-imports/no-unused-imports": "error",
+		"unused-imports/no-unused-vars": [
+			"warn",
+			{ "vars": "all", "varsIgnorePattern": "^_", "args": "after-used", "argsIgnorePattern": "^_" }
+		]
+  },
+  "plugins": ["unused-imports"],
+  "extends":["next", "prettier", "next/core-web-vitals"]
+}
